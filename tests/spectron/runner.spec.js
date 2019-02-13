@@ -37,7 +37,7 @@ describe('Spectron', function () {
     app = new spectron.Application({
       path: entrypoint,
       port: 9995,
-      args: [ '.' ]
+      args: [ '.', '--debug' ]
     })
 
     return app.start()
